@@ -1,0 +1,97 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+
+.padre{
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: 2s;
+    
+}
+header{
+    
+   height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(66, 147, 212);
+    color: white;
+    padding: 0% 1%;
+    transition: 1s;
+    ;
+}
+
+
+header h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+header h4{
+    transition: 1s;
+    font-size: 15px;
+}
+.btn-sesion{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 13%;
+
+}
+header h4:hover{
+    cursor: pointer;
+transform: translate(0,5px);
+transition: 2s;
+}
+header img:hover{
+    cursor: pointer;
+
+}
+
+@media(max-width:850px ){
+.padre{
+    margin: 0px;
+    
+}
+    
+.logo{
+    display: none;
+}
+
+    header{
+        margin: opx;
+display: block;
+orientation: landscape;
+height: auto;
+
+text-align: center;
+
+    }
+    header h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+        margin: 0px;
+        padding-top: 1%;
+    }
+    header h4{
+        
+        font-size: 18px;
+        
+    }
+header img{
+    width: 13%;
+}
+
+    .btn-sesion{
+        display: flex;
+      width: auto;
+        height: auto;
+        margin: 0% 15%;
+        padding-bottom: 1%;
+       
+        
+        
+        }
+}
