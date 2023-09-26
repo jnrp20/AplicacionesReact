@@ -1,97 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
+h1,
+h4 {
+    margin: 0;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
-
-
-.padre{
+.padre {
     margin: 0px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    transition: 2s;
-    
+    transition: 1s;
 }
-header{
-    
-   height: 8%;
+
+header {
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(66, 147, 212);
+    background-color: #034A68;
     color: white;
-    padding: 0% 1%;
     transition: 1s;
-    ;
+    padding: 1% 7%;
 }
 
-
-header h1{
-    font-family: 'Dancing Script', cursive;
+header h1 {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 50px;
 }
-header h4{
+
+header h4 {
     transition: 1s;
-    font-size: 15px;
+    font-size: 16px;
 }
-.btn-sesion{
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 13%;
 
+.logodiv{
+    display: flex;
+    width: fit-content;
+    justify-content: left;
+    align-items: center;
 }
-header h4:hover{
+
+
+.btn-sesion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 22%;
+    min-width: 18%;
+}
+
+.btn-registrarse {
+    background-color: chocolate;
+    padding: 5%;
+    border-radius: 13px 13px 13px 13px;
+    /* la transition es para cuando activen el bombillo se vea suave la animación */
+        transition: 1s;
+}
+
+.btn-registrarse:hover {
+   
     cursor: pointer;
-transform: translate(0,5px);
-transition: 2s;
-}
-header img:hover{
-    cursor: pointer;
 
+    animation-name: animarboton;
+    animation-duration: 1s; 
+    transition: 1s;
 }
 
-@media(max-width:850px ){
-.padre{
-    margin: 0px;
-    
-}
-    
-.logo{
-    display: none;
-}
-
-    header{
-        margin: opx;
-display: block;
-orientation: landscape;
-height: auto;
-
-text-align: center;
-
-    }
-    header h1{
-        font-family: 'Dancing Script', cursive;
-        font-size: 35px;
-        margin: 0px;
-        padding-top: 1%;
-    }
-    header h4{
-        
-        font-size: 18px;
-        
-    }
-header img{
-    width: 13%;
-}
-
-    .btn-sesion{
-        display: flex;
-      width: auto;
-        height: auto;
-        margin: 0% 15%;
-        padding-bottom: 1%;
+@keyframes animarboton {
+    0% {
+        transform: translate(0, 3px);
        
-        
-        
-        }
+    }
+
+    50% {
+        transform: translate(0, -3px);
+        background-color: rgb(165, 34, 71);
+    }
 }
+
+
+header h4:hover, img:hover {
+    cursor: pointer;
+animation-name: animarletras;
+animation-duration: 1s;
+    transition: 1s;
+}
+
+
+@keyframes animarletras {
+    0% {
+        transform: translate(0, 3px);
+       
+    }
+
+    50% {
+        transform: translate(0, -3px);
+        
+    }
+}
+@media (max-width: 850px) {
+    .padre {
+        margin: 0px;
+      
+    }
+
+   
+    header {
+        display: block;
+        margin: 0px;
+        padding: 0;
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .logodiv{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-family: "Dancing Script", cursive;
+        font-size: 30px;
+       
+        padding: 3% 0%;
+    }
+
+    
+
+    
+
+    .btn-sesion {
+        display: flex;
+       
+        width: auto;
+        height: 50px;
+      
+        justify-content: space-around;
+        background-color: rgb(16, 109, 163);
+    }
+    .img-bombillo{
+       
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-registrarse {
+        display: flex;
+        align-items: center;
+        background-color: chocolate;
+        padding: 1% 3%;
+        
+        border-radius: 13px 13px 13px 13px;
+/* la transition es para cuando activen el bombillo se vea suave la animación */
+        transition: 1s;
+    }
+
+    .btn-registrarse,
+    h4,
+    img {
+        cursor: pointer;
+    }
+   
+}
+
