@@ -24,7 +24,7 @@ export default function Component1() {
 
                 <div className="logodiv">
 
-                    <img 
+                    <img
 
                         id="bombillo"
                         src={logo}
@@ -43,9 +43,9 @@ export default function Component1() {
                         onClick={prueba}
                         id="bombillo"
                         src={bombillaOn}
-                       
+
                         width="12%"
-                       
+
                         ref={refBombillo}
                     />
 
@@ -64,6 +64,28 @@ export default function Component1() {
                     </div>
                 </div>
             </header>
+
+            <div className="sub-header">
+                <div className="tags">
+                <a href="">SERVICIOS</a>
+                </div>
+                <div className="tags">
+                <a href="">FUNDACIONES</a>
+                </div>
+                <div className="tags">
+                <a href="">ALERTAS</a>
+                </div>
+                <div className="tags">
+                <a href="">NOTICIAS</a>
+                </div>
+                <div className="tags">
+                <a href="">ACERCA DE</a>
+                </div>
+                <div className="tags">
+                <a href="">PUBLICITA AQUI</a>
+                </div>
+
+            </div>
 
         </div>
     );
