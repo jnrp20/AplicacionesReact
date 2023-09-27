@@ -67,23 +67,16 @@ header h4 {
     transition: 1s;
 }
 
-@keyframes animarboton {
-    0% {
-        transform: translate(0, 3px);
-       
-    }
-
-    50% {
-        transform: translate(0, -3px);
-        background-color: rgb(165, 34, 71);
-    }
+.btn-opciones{
+    display: none;
 }
+
 
 
 header h4:hover, img:hover {
     cursor: pointer;
-animation-name: animarletras;
-animation-duration: 1s;
+    animation-name: animarletras;
+    animation-duration: 1s;
     transition: 1s;
 }
 
@@ -97,19 +90,14 @@ animation-duration: 1s;
     
     
     background-color: rgb(216, 217, 217);
-
+    
 }
-.sub-header a{
-    font-size: 15px;
-    text-decoration: none;
-    color: black;
 
-}
 .tags a{
     font-size: 15px;
     text-decoration: none;
     color: black;
-
+    
 }
 
 
@@ -127,6 +115,17 @@ animation-duration: 1s;
     
 }
 
+@keyframes animarboton {
+    0% {
+        transform: translate(0, 3px);
+       
+    }
+
+    50% {
+        transform: translate(0, -3px);
+        background-color: rgb(165, 34, 71);
+    }
+}
 
 @keyframes animarletras {
     0% {
@@ -204,5 +203,92 @@ animation-duration: 1s;
         cursor: pointer;
     }
    
+    .sub-header{
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        height:auto;
+        
+        
+        background-color: rgb(216, 217, 217);
+        
+    }
+    
+    .tags a{
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+    
+    .tags{
+        display: flex;
+       
+        width: auto;
+       
+      padding: 1% 1%;
+        
+        
+        transition: 1s;
+    }
+
+
+
+    @media (max-width: 556px) {
+
+        .sub-header{
+
+            display: none;
+            
+            width: auto;
+            height:auto;
+            
+            
+            background-color: rgb(216, 217, 217);
+            /* animation-name: animarOpciones;
+            animation-duration: 1s; */
+            transition: 1s;
+            
+        }
+        .btn-opciones{
+            display: flex;
+            width: 40px;
+            height: 40px;
+        }
+        .tags {
+            display: flex;
+            justify-content: center;
+            margin: 2px 0;
+            border:1px solid #807d7d;
+            
+        }
+        
+    }
+@keyframes animarOpciones {
+    from {
+        margin-left: 100%;
+        /* este with es el ancho del div, si le pongo 300% parece que el div se encogiera */
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+@keyframes ocultarOpciones {
+    from {
+        margin-left: 0%;
+        /* este with es el ancho del div, si le pongo 300% parece que el div se encogiera */
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 100%;
+        width: 100%;
+      }
+}
 }
 
