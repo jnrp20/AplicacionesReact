@@ -7,9 +7,9 @@ h4 {
 
 .padre {
     margin: 0px;
-    height: 100vh;
+    height: auto;
     background-color: rgb(255, 255, 255);
-    transition: 1s;
+    
 }
 
 header {
@@ -73,7 +73,7 @@ header h4 {
 
 
 
-header h4:hover, img:hover {
+header h4:hover, header img:hover {
     cursor: pointer;
     animation-name: animarletras;
     animation-duration: 1s;
@@ -111,9 +111,12 @@ header h4:hover, img:hover {
     transition: 1s;
 }
 .tags:hover{
-    background-color:rgb(45, 186, 172);
+    background-color:rgb(45, 153, 186);
     
 }
+ 
+
+
 
 @keyframes animarboton {
     0% {
@@ -254,41 +257,34 @@ header h4:hover, img:hover {
         }
         .btn-opciones{
             display: flex;
-            width: 40px;
+            width: auto;
             height: 40px;
         }
-        .tags {
-            display: flex;
-            justify-content: center;
-            margin: 2px 0;
-            border:1px solid #807d7d;
+        .tagsbtn{
+            padding: 3% 0;
+            
+           
             
         }
+       
+        .tagsbtn a {
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            margin: 2px 0;
+           
+            
+        }
+
+        
         
     }
 @keyframes animarOpciones {
-    from {
-        margin-left: 100%;
-        /* este with es el ancho del div, si le pongo 300% parece que el div se encogiera */
-        width: 100%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
+  0%{
+    background-color: aqua;
+  }
 }
-@keyframes ocultarOpciones {
-    from {
-        margin-left: 0%;
-        /* este with es el ancho del div, si le pongo 300% parece que el div se encogiera */
-        width: 100%;
-      }
-    
-      to {
-        margin-left: 100%;
-        width: 100%;
-      }
-}
+
 }
 
